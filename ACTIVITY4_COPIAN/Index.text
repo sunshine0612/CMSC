@@ -1,0 +1,63 @@
+import java.util.Scanner;
+public class ACTIVITY4 {
+	public static void main(String [] args) {
+		
+	
+      Scanner scan = new Scanner (System.in);
+
+       int Month = 12;
+        int Date = 31;
+        int Year = 2022;
+      System.out.println("Month:"); 
+      Month = scan.nextInt();
+      System.out.println("Date:");
+      Date = scan.nextInt();
+      System.out.println("Year:");
+      Year = scan.nextInt();
+      
+      
+      switch(Month)
+      {
+      case 1:
+             System.out.println(" January " + Date +", " + Year);
+             break;
+         case 2:
+             System.out.println("February " + Date +", " + Year);
+             break;
+         case 3:
+             System.out.println("March " + Date +", " + Year);
+             break;
+         case 4:
+             System.out.println("April " + Date +", " + Year);
+             break;
+         case 5:
+             System.out.println("May " + Date +", " + Year);
+             break;
+         case 6:
+        	 System.out.println("June " + Date +", " + Year);
+        	 break;
+         case 7:
+        	 System.out.println("July " + Date +", " + Year);
+        	 break;
+         case 8:
+        	 System.out.println("August " + Date +", " + Year);
+        	 break;
+         case 9:
+        	 System.out.println("September " + Date +", " + Year);
+        	 break;
+         case 10:
+        	 System.out.println("October " + Date +", " + Year);
+        	 break;
+         case 11:
+        	 System.out.println("November " + Date +", " + Year);
+        	 break;
+         case 12:
+        	 System.out.println("December " + Date +", " + Year);
+        	 break;
+        
+      default:
+    	  System.out.println("Invalid Month"); 
+      }
+	}
+}
+     
