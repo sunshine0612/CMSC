@@ -1,0 +1,54 @@
+public class DOG {
+	String name;
+	String breed;
+	int age;
+	String color;
+	
+	public DOG() 
+	{
+		name = "Sky";
+		breed = "aspin";
+		age = 1;
+		color = "white";
+	}
+	public DOG(String n, String b, int a, String c) {
+		name = n; 
+		breed = b;
+		age = a;
+		color = c;
+	}
+	public String getName()
+	{
+		return name;
+	}
+	public String getBreed()
+	{
+		return breed;
+	}
+	public int getAge()
+	{
+		return age;
+	}
+	public String getColor()
+	{
+		return color;
+	}
+	public String toString() 
+	{
+		return ("Hi, My name is " + getName() +" my breed is " + getBreed() + " i'm " +  getAge() + " years old " + " my color is " +getColor());
+	}
+}
+public class Dog {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DOG defaultDog = new DOG();
+		DOG dogforme = new DOG("Black","k9",3,"white");
+		
+		System.out.println("Displayed default dog");
+		System.out.println( defaultDog.toString());
+		System.out.println("The Dog i have ");
+		System.out.println(dogforme.toString());
+	}
+
+}
